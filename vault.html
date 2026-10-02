@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sevenfold // Cold Vault</title>
+<meta name="description" content="Fragment Forge III, Node 01. The cold vault.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<div class="tape" aria-hidden="true"></div>
+
+<header class="deck">
+  <div class="deck-inner">
+    <div class="unit">
+      <span class="unit-badge" aria-hidden="true">7</span>
+      <span>
+        <span class="unit-name">Sevenfold</span>
+        <span class="unit-sub">Fragment Forge III &middot; Hard</span>
+      </span>
+    </div>
+    <nav class="tabs" aria-label="Facility sections">
+      <a href="index.html">Forge</a>
+      <a class="on" href="vault.html">Vault</a>
+      <a href="relay.html">Relay</a>
+      <a href="archive.html">Archive</a>
+      <a href="terminal.html">Terminal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="siren">Node 01 &middot; Cold Vault</p>
+    <h1>Cold Vault</h1>
+    <p>Sealed, powered down, and holding nothing you can see.</p>
+  </section>
+
+  <section class="chamber">
+    <span class="stencil-label">Chamber 01 &middot; Sealed</span>
+    <h2>No Signal</h2>
+    <p>
+      The vault readout is blank and the door is welded. The description of
+      this vault, however, lives in the file that paints the whole facility.
+      That file carries a set of custom properties, and one of them is the
+      label on the door.
+    </p>
+
+    <div class="crate"><em>No Signal</em></div>
+
+    <p class="caution">
+      <b>Warning</b><br>
+      Open the stylesheet this page loads and read its custom properties on
+      the <strong>:root</strong> rule. The property named
+      <strong>--archive-first</strong> holds the first payload, and
+      <strong>--archive-first-fingerprint</strong> holds its integrity value.
+      This piece declares its position as <strong>FIRST</strong>.
+    </p>
+  </section>
+</main>
+
+<footer>Cold Vault &middot; Node 01</footer>
+
+<script src="assets/vault.js"></script>
+</body>
+</html>

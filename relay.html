@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sevenfold // Relay Station</title>
+<meta name="description" content="Fragment Forge III, Node 02. The relay packet.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<div class="tape" aria-hidden="true"></div>
+
+<header class="deck">
+  <div class="deck-inner">
+    <div class="unit">
+      <span class="unit-badge" aria-hidden="true">7</span>
+      <span>
+        <span class="unit-name">Sevenfold</span>
+        <span class="unit-sub">Fragment Forge III &middot; Hard</span>
+      </span>
+    </div>
+    <nav class="tabs" aria-label="Facility sections">
+      <a href="index.html">Forge</a>
+      <a href="vault.html">Vault</a>
+      <a class="on" href="relay.html">Relay</a>
+      <a href="archive.html">Archive</a>
+      <a href="terminal.html">Terminal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="siren">Node 02 &middot; Relay Station</p>
+    <h1>Relay Station</h1>
+    <p>A packet is sitting on the wire. The page renders none of it.</p>
+  </section>
+
+  <section class="chamber">
+    <span class="stencil-label">Chamber 02 &middot; Intercepted</span>
+    <h2>Packet Contents</h2>
+    <p>
+      The relay captured a packet and pinned it to this page. The packet has no
+      size, no colour and no text, so nothing is drawn on screen. Its three
+      attributes are still in the markup, and attributes are only visible to
+      someone who reads the tree instead of the picture.
+    </p>
+
+    <div class="crate"><em>Packet Held</em></div>
+
+    <div id="packet"
+         data-position="SECOND"
+         data-integrity="fe68e67635"
+         data-payload="aDRyZF9tMGQzXw=="></div>
+
+    <p class="caution">
+      <b>Warning</b><br>
+      Open Developer Tools, go to Elements, and expand this page's markup until
+      you reach the element with the identifier <strong>packet</strong>. Read
+      its <strong>data-position</strong>, <strong>data-integrity</strong> and
+      <strong>data-payload</strong> attributes. The packet declares its
+      position as <strong>SECOND</strong>.
+    </p>
+  </section>
+</main>
+
+<footer>Relay Station &middot; Node 02</footer>
+
+<script src="assets/vault.js"></script>
+</body>
+</html>

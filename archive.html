@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sevenfold // Memory Archive</title>
+<meta name="description" content="Fragment Forge III, Node 03. Long term and per tab storage.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<div class="tape" aria-hidden="true"></div>
+
+<header class="deck">
+  <div class="deck-inner">
+    <div class="unit">
+      <span class="unit-badge" aria-hidden="true">7</span>
+      <span>
+        <span class="unit-name">Sevenfold</span>
+        <span class="unit-sub">Fragment Forge III &middot; Hard</span>
+      </span>
+    </div>
+    <nav class="tabs" aria-label="Facility sections">
+      <a href="index.html">Forge</a>
+      <a href="vault.html">Vault</a>
+      <a href="relay.html">Relay</a>
+      <a class="on" href="archive.html">Archive</a>
+      <a href="terminal.html">Terminal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="siren">Node 03 &middot; Memory Archive</p>
+    <h1>Memory Archive</h1>
+    <p>Two stores, one door. Finding one of them is not the same as finding both.</p>
+  </section>
+
+  <section class="chamber">
+    <span class="stencil-label">Chamber 03 &middot; Dual store</span>
+    <h2>Long Term And Per Tab</h2>
+    <p>
+      This archive writes to two different storage mechanisms the instant the
+      page loads. One survives the tab being closed. The other does not, and it
+      is easy to miss because it looks almost identical in the developer
+      tools. Both of them are carrying a piece.
+    </p>
+
+    <div class="deploy">
+      <button class="btn" type="button" data-action="scan">Scan Memory</button>
+    </div>
+
+    <div class="slab" id="out">Chamber idle. No read issued.</div>
+
+    <p class="caution">
+      <b>Warning</b><br>
+      Open Developer Tools, go to Application in Chrome or Storage in Firefox,
+      then expand <strong>both</strong> Local Storage and Session Storage for
+      this site. One key sits in each. They declare their own positions as
+      <strong>THIRD</strong> and <strong>SEVENTH</strong>. Read Session Storage
+      before you close or reload the tab, or the seventh piece is gone.
+    </p>
+  </section>
+</main>
+
+<footer>Memory Archive &middot; Node 03</footer>
+
+<script src="assets/archive.js"></script>
+</body>
+</html>
